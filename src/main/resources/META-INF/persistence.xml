@@ -3,10 +3,10 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
-    <persistence-unit name="parking_spots_assignment">
-        <class>mindswap.jpa.bank.VehicleEntity.java</class>
-        <class>mindswap.jpa.bank.ParkingSpotEntity.java</class>
-        <class>mindswap.jpa.bank.TeacherEntity.java</class>
+    <persistence-unit name="bank">
+        <class>mindswap.jpa.bank.AccountEntity.java</class>
+        <class>mindswap.jpa.bank.CustomerEntity.java</class>
+        <class>mindswap.jpa.bank.BankEntity.java</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/bank"/>
@@ -14,7 +14,7 @@
             <property name="hibernate.connection.password" value="12345"/>
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 </persistence>
